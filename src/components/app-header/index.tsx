@@ -21,7 +21,7 @@ const App: React.FC<IApp> = () => {
         <div className="header-list">
           {headerLinks.map((item: ILinkItem) => {
             return (
-              <NavLink to={item.link}>
+              <NavLink to={item.link} key={item.title}>
                 {item.title}
                 <i className="sprite_01 icon" />
               </NavLink>

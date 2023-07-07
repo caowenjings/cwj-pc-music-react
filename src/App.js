@@ -1,16 +1,19 @@
-import React, { useState, memo } from 'react'
+import React, { Suspense, memo } from 'react';
+import { renderRoutes } from 'react-router-config';
 
-import WJAppHeader from '@/components/app-header'
-import WJAppFooter from '@/components/app-footer'
+import routes from '@/router';
+
+import WJAppHeader from '@/components/app-header';
+import WJAppFooter from '@/components/app-footer';
 
 const App = () => {
   return (
-    <div>
+    <>
       <WJAppHeader />
-      <div>CONTENT</div>
+      <Suspense fallback={<div>loading</div>}>{renderRoutes(routes)}</Suspense>
       <WJAppFooter />
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default memo(App)
+export default memo(App);
