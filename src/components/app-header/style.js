@@ -8,7 +8,14 @@ export const AppHeaderWrapper = styled.div`
   .content {
     display: flex;
     justify-content: space-between;
-    background: red;
+  }
+
+  .header-logo {
+    display: block;
+    width: 176px;
+    height: 70px;
+    background-position: 0 0;
+    text-indent: -9999px;
   }
 
   .divider {
