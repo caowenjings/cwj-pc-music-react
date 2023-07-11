@@ -5,7 +5,7 @@ interface IDiscover {}
 const Discover: React.FC<IDiscover> = () => {
   const [data, setData] = useState(0);
 
-  return <div></div>;
+  return <div>456</div>;
 };
 
 export default memo(Discover);

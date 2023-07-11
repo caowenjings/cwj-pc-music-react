@@ -1,17 +1,11 @@
-import React, { Suspense, memo } from 'react';
-import { renderRoutes } from 'react-router-config';
+import React, { memo } from 'react';
 
-import routes from '@/router';
-
-import WJAppHeader from '@/components/app-header';
-import WJAppFooter from '@/components/app-footer';
+import WJMain from '@/views/main';
 
 const App = () => {
   return (
     <>
-      <WJAppHeader />
-      <Suspense fallback={<div>loading</div>}>{renderRoutes(routes)}</Suspense>
-      <WJAppFooter />
+      <WJMain />
     </>
   );
 };
