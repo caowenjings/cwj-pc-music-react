@@ -2,10 +2,11 @@
 import React, { useState, memo } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { headerLinks } from '../../content/local-data';
-import { ILinkItem } from '../../content/local-data-type';
+import { headerLinks } from '@/content/local-data';
+import { ILinkItem } from '@/content/local-data-type';
 
 import { AppHeaderWrapper } from './style';
+import './index.css';
 
 interface IApp {}
 
@@ -21,11 +22,10 @@ const App: React.FC<IApp> = () => {
         <div className="header-list">
           {headerLinks.map((item: ILinkItem) => {
             return (
-              // <NavLink to={item.link} key={item.title}>
-              //   {item.title}
-              //   <i className="sprite_01 icon" />
-              // </NavLink>
-              12
+              <NavLink to={item.link} key={item.title}>
+                {item.title}
+                <i className="sprite_01 icon" />
+              </NavLink>
             );
           })}
         </div>

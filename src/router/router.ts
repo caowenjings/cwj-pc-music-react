@@ -1,4 +1,6 @@
 import WJDiscover from '../views/discover';
+import WJFriend from '@/views/friend';
+import WJMy from '@/views/my';
 // import HYRecommend from "../pages/discover/c-pages/recommend";
 // import HYRanking from "../pages/discover/c-pages/ranking";
 // import HYSongs from "../pages/discover/c-pages/songs";
@@ -6,9 +8,6 @@ import WJDiscover from '../views/discover';
 // import HYArtist from "../pages/discover/c-pages/artist";
 // import HYAlbum from "../pages/discover/c-pages/album";
 // import HYPlayer from "../pages/player";
-
-// import HYFriend from "../pages/friend";
-import WJMy from '../views/songs';
 
 // const HYDiscover = React.lazy((_) => import('../pages/discover'));
 // const HYRecommend = React.lazy((_) => import('../pages/discover/c-pages/recommend'));
@@ -25,8 +24,8 @@ import WJMy from '../views/songs';
 export default [
   {
     path: '/',
-    exact: true
-    // render: () => <Redirect from="/*" to="/"></Redirect>
+    component: WJDiscover,
+    routes: []
   },
   {
     path: '/discover',
@@ -36,6 +35,11 @@ export default [
   {
     path: '/my',
     component: WJMy,
+    routes: []
+  },
+  {
+    path: '/friend',
+    component: WJFriend,
     routes: []
   }
 ];

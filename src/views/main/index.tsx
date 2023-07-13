@@ -1,19 +1,19 @@
+/** 主页面 */
 import React, { memo } from 'react';
-import { HashRouter } from 'react-router-dom';
 
-import { Router } from '../../router/index';
+import WJRouter from '@/router/index';
 
-import WJAppHeader from '../../components/app-header';
-import WJAppFooter from '../../components/app-footer';
+import WJAppHeader from '@/components/app-header';
+import WJAppFooter from '@/components/app-footer';
 
-export default memo(function HYMain() {
+const WJMain = () => {
   return (
-    <HashRouter>
+    <>
       <WJAppHeader />
-      <div>
-        <Router />
-      </div>
+      <WJRouter />
       <WJAppFooter />
-    </HashRouter>
+    </>
   );
-});
+};
+
+export default memo(WJMain);

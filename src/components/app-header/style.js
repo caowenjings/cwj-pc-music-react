@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const AppHeaderWrapper = styled.div`
   height: 75px;
@@ -8,6 +8,7 @@ export const AppHeaderWrapper = styled.div`
   .content {
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
   }
 
   .header-logo {
@@ -22,4 +23,4 @@ export const AppHeaderWrapper = styled.div`
     height: 5px;
     background-color: #c20c0c;
   }
-`
+`;

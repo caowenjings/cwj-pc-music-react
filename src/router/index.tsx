@@ -19,6 +19,8 @@ const generateRouter = (routers: any) => {
   });
 };
 
-const Router = () => useRoutes(generateRouter(routes));
+const Router = () => {
+  return useRoutes(generateRouter(routes));
+};
 
-export { Router };
+export default Router;

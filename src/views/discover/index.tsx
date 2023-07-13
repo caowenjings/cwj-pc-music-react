@@ -1,3 +1,4 @@
+/** 发现音乐页面 */
 import React, { useState, memo } from 'react';
 
 interface IDiscover {}

@@ -1,12 +1,13 @@
-import React, { memo } from "react";
+import { memo } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import WJMain from "./views/main";
+import WJMain from '@/views/main';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <WJMain />
-    </>
+    </BrowserRouter>
   );
 }
 

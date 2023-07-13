@@ -1,3 +1,4 @@
+// 头部 navlist
 export const headerLinks = [
   {
     title: '发现音乐',
@@ -5,7 +6,7 @@ export const headerLinks = [
   },
   {
     title: '我的音乐',
-    link: '/mine'
+    link: '/my'
   },
   {
     title: '朋友',
@@ -23,7 +24,7 @@ export const headerLinks = [
     title: '下载客户端',
     link: 'https://music.163.com/#/download'
   }
-]
+];
 
 export const footerLinks = [
   {
@@ -46,7 +47,7 @@ export const footerLinks = [
     title: '意见反馈',
     link: '#'
   }
-]
+];
 
 export const footerImages = [
   {
@@ -61,7 +62,7 @@ export const footerImages = [
   {
     link: 'https://music.163.com/uservideo#/plan'
   }
-]
+];
 
 // discover中的数据
 export const dicoverMenu = [
@@ -89,7 +90,7 @@ export const dicoverMenu = [
     title: '新碟上架',
     link: '/discover/album'
   }
-]
+];
 
 // 热门主播
 export const hotRadios = [
@@ -123,7 +124,7 @@ export const hotRadios = [
     position: '独立DJ，CRI环球旅游广播特邀DJ',
     url: '/user/home?id=2313954'
   }
-]
+];
 
 // 歌手类别
 export const artistCategories = [
@@ -250,4 +251,4 @@ export const artistCategories = [
       }
     ]
   }
-]
+];

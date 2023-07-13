@@ -8,4 +8,5 @@ const App: React.FC<IApp> = () => {
 
   return <div>12</div>;
 };
+
 export default App;
