@@ -1,6 +1,7 @@
-import WJDiscover from '../views/discover';
-import WJFriend from '@/views/friend';
-import WJMy from '@/views/my';
+import React, { lazy } from 'react';
+
+export type RoutersType = { path: string; component: React.LazyExoticComponent<any>; routes: any[] };
+
 // import HYRecommend from "../pages/discover/c-pages/recommend";
 // import HYRanking from "../pages/discover/c-pages/ranking";
 // import HYSongs from "../pages/discover/c-pages/songs";
@@ -21,25 +22,25 @@ import WJMy from '@/views/my';
 // const HYFriend = React.lazy((_) => import('../pages/friend'));
 // const HYMine = React.lazy((_) => import('../pages/mine'));
 
-const router = [
+const router: RoutersType[] = [
   {
     path: '/',
-    component: WJDiscover,
+    component: lazy(() => import('@/views/discover')),
     routes: []
   },
   {
     path: '/discover',
-    component: WJDiscover,
+    component: lazy(() => import('@/views/discover')),
     routes: []
   },
   {
     path: '/my',
-    component: WJMy,
+    component: lazy(() => import('@/views/my')),
     routes: []
   },
   {
     path: '/friend',
-    component: WJFriend,
+    component: lazy(() => import('@/views/friend')),
     routes: []
   }
 ];
