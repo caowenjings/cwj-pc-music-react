@@ -21,7 +21,7 @@ import WJMy from '@/views/my';
 // const HYFriend = React.lazy((_) => import('../pages/friend'));
 // const HYMine = React.lazy((_) => import('../pages/mine'));
 
-export default [
+const router = [
   {
     path: '/',
     component: WJDiscover,
@@ -43,3 +43,5 @@ export default [
     routes: []
   }
 ];
+
+export default router;

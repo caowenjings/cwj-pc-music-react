@@ -30,7 +30,7 @@ button {
 
 /* 精灵图 */
 .sprite_01 {
-    background: url(../img/sprite_01.png) no-repeat 0 9999px;
+    background: url('../img/sprite_01.png') no-repeat 0 9999px;
 }
 
 .sprite_02 {

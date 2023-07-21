@@ -3,6 +3,16 @@ import { useRoutes } from 'react-router-dom';
 
 import routes from './router';
 
+/**
+ *
+ * @param useRoutes:同Routers组件一样，只不过是在js中使用
+ * @returns const routes = useRoutes([
+    { path:'/',
+      element: <div>...</div>
+    }
+  ]);
+ */
+
 // 路由处理方式
 const generateRouter = (routers: any) => {
   return routers.map((item: any) => {

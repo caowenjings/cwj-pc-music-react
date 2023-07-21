@@ -22,10 +22,12 @@ const App: React.FC<IApp> = () => {
         <div className="header-list">
           {headerLinks.map((item: ILinkItem) => {
             return (
-              <NavLink to={item.link} key={item.title}>
-                {item.title}
-                <i className="sprite_01 icon" />
-              </NavLink>
+              <div className="header-list-item">
+                <NavLink to={item.link} key={item.title}>
+                  <span className="header-list-title">{item.title}</span>
+                  <i className="sprite_01 icon" />
+                </NavLink>
+              </div>
             );
           })}
         </div>

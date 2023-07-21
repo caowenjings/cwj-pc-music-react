@@ -23,4 +23,18 @@ export const AppHeaderWrapper = styled.div`
     height: 5px;
     background-color: #c20c0c;
   }
+
+  .header-list {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-list-item {
+    padding: 0 20px;
+  }
+
+  .header-list-title {
+    color: #ccc;
+  }
 `;
