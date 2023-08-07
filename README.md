@@ -19,7 +19,23 @@ export default memo(App);
 tabbarWrapper
 tabbarList
 tabbarItem
+---------loading-------------
+loading 组件
+
 --------topic 列表页 -----------------
-scrollList
+scrollList 列表组件
 
 ---------- 实现具体的接口请求----------------
+base 封装
+handleComresponse 公共函数处理成功数据
+handleCommonError 公共函数处理错误数据
+
+具体的接口请求封装
+
+--- 骨架图 --- ----------
+没有数据时显示
+
+---topic 组件-------------
+cardWrapper
+cardHead -》子元素（tag）
+cardBody -》子元素 image,info,time
